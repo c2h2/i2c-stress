@@ -1,6 +1,7 @@
+#0x1b 0x2b 0x01
 $BUS=1
-$REG=0x50
-$ADD=0x04
+$REG=0x1b
+$ADD=0x2b
 
 def write val
 	`i2cset -f -y #{$BUS} #{$REG} #{$ADD} #{val}`
